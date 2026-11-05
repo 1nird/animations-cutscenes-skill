@@ -1,0 +1,107 @@
+{
+  "name": "RunCycle",
+  "rig": "R15",
+  "fps": 30,
+  "duration": 0.8,
+  "loop": true,
+  "priority": "Movement",
+  "grounded": true,
+  "locomotion": true,
+  "intent": "0.8s run loop, two contacts, arms opposite the legs, forward lean from the waist.",
+  "markers": [
+    {"name": "LeftContact", "t": 0.0},
+    {"name": "RightContact", "t": 0.4}
+  ],
+  "keys": [
+    {
+      "t": 0.0,
+      "ease": "linear",
+      "pose": {
+        "UpperTorso": [-12, 6, 0],
+        "Head": [8, -6, 0],
+        "LeftUpperArm": [-38, 0, 8],
+        "LeftLowerArm": [65, 0, 0],
+        "RightUpperArm": [42, 0, -8],
+        "RightLowerArm": [70, 0, 0],
+        "LeftUpperLeg": [6, 0, 0],
+        "LeftLowerLeg": [-6, 0, 0],
+        "LeftFoot": [0, 0, 0],
+        "RightUpperLeg": [-28, 0, 0],
+        "RightLowerLeg": [55, 0, 0],
+        "RightFoot": [-20, 0, 0]
+      }
+    },
+    {
+      "t": 0.2,
+      "ease": "inout",
+      "pose": {
+        "UpperTorso": [-12, 0, 0],
+        "Head": [8, 0, 0],
+        "LeftUpperArm": [0, 0, 10],
+        "LeftLowerArm": [35, 0, 0],
+        "RightUpperArm": [0, 0, -10],
+        "RightLowerArm": [35, 0, 0],
+        "LeftUpperLeg": [-14, 0, 0],
+        "LeftLowerLeg": [40, 0, 0],
+        "LeftFoot": [-18, 0, 0],
+        "RightUpperLeg": [22, 0, 0],
+        "RightLowerLeg": [-45, 0, 0],
+        "RightFoot": [10, 0, 0]
+      }
+    },
+    {
+      "t": 0.4,
+      "ease": "inout",
+      "pose": {
+        "UpperTorso": [-12, -6, 0],
+        "Head": [8, 6, 0],
+        "LeftUpperArm": [42, 0, 8],
+        "LeftLowerArm": [70, 0, 0],
+        "RightUpperArm": [-38, 0, -8],
+        "RightLowerArm": [65, 0, 0],
+        "LeftUpperLeg": [-28, 0, 0],
+        "LeftLowerLeg": [55, 0, 0],
+        "LeftFoot": [-20, 0, 0],
+        "RightUpperLeg": [6, 0, 0],
+        "RightLowerLeg": [-6, 0, 0],
+        "RightFoot": [0, 0, 0]
+      }
+    },
+    {
+      "t": 0.6,
+      "ease": "inout",
+      "pose": {
+        "UpperTorso": [-12, 0, 0],
+        "Head": [8, 0, 0],
+        "LeftUpperArm": [0, 0, 10],
+        "LeftLowerArm": [35, 0, 0],
+        "RightUpperArm": [0, 0, -10],
+        "RightLowerArm": [35, 0, 0],
+        "LeftUpperLeg": [22, 0, 0],
+        "LeftLowerLeg": [-45, 0, 0],
+        "LeftFoot": [10, 0, 0],
+        "RightUpperLeg": [-14, 0, 0],
+        "RightLowerLeg": [40, 0, 0],
+        "RightFoot": [-18, 0, 0]
+      }
+    },
+    {
+      "t": 0.8,
+      "ease": "linear",
+      "pose": {
+        "UpperTorso": [-12, 6, 0],
+        "Head": [8, -6, 0],
+        "LeftUpperArm": [-38, 0, 8],
+        "LeftLowerArm": [65, 0, 0],
+        "RightUpperArm": [42, 0, -8],
+        "RightLowerArm": [70, 0, 0],
+        "LeftUpperLeg": [6, 0, 0],
+        "LeftLowerLeg": [-6, 0, 0],
+        "LeftFoot": [0, 0, 0],
+        "RightUpperLeg": [-28, 0, 0],
+        "RightLowerLeg": [55, 0, 0],
+        "RightFoot": [-20, 0, 0]
+      }
+    }
+  ]
+}
