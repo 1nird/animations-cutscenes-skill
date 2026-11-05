@@ -53,12 +53,28 @@ py scripts/verify.py --dir out
 
 `verify.py` prints a gate table and exits non-zero on any red gate.
 
+## Optional: Blender
+
+When the motion needs a solver or a real rig, author in Blender and bake the
+evaluated pose back into the same spec:
+
+```bash
+py scripts/blender.py check
+py scripts/blender.py probe rig.blend --out rig-info.json
+py scripts/blender.py bake rig.blend mapping.json --out clip.json
+```
+
+IK, constraints and NLA are read after evaluation, so they need no pre-bake. The
+output is ordinary spec JSON: the same verifier, contact sheet and exporter apply.
+See `references/blender.md` in the skill.
+
 ## Requirements
 
 - **Python 3.11+** and **Pillow** — the only third-party dependency, used for the
   contact sheet. Every other script is stdlib.
 - **Roblox Studio** for playback, the marker check and publishing.
-- No Blender, no local rig, no config file, no API key.
+- **Blender 3.6+ is optional** — for IK feet, custom rigs, props and mocap. The
+  core path needs no `.blend`, no local rig, no config file and no API key.
 
 ## The scripts
 
@@ -68,6 +84,7 @@ py scripts/verify.py --dir out
 | `anim.py` | lint a spec; build `.rbxmx` + Luau builder + report |
 | `fk.py` | forward kinematics: sole contact, slip, stride, root height |
 | `preview.py` | contact sheet, side and front, Pillow only |
+| `blender.py` | optional: find Blender, probe a rig, bake it into a spec |
 | `cutscene.py` | validate a shot list; emit `CutsceneData` + `CutscenePlayer` |
 | `verify.py` | the gate table |
 
@@ -83,7 +100,10 @@ py scripts/verify.py --dir out
 - `verify.py` passes all ten gates on the example project.
 - The root channel is exercised separately: a 0.2-stud drop moves both soles by
   0.2 and trips the floor gate, which is the correct failure.
-last mile, and the skill says so rather than pretending otherwise.
+- The optional Blender bridge was run on 5.2.2 against a generated six-bone rig:
+  `check` found it, `probe` drafted the mapping, `bake` turned a 40° arm and 30°
+  forearm into −40°/−30° and a 0.2-stud root lift, and the result built a valid
+  `.rbxmx`. A missing Blender exits 2 with instructions.
 
 ## Licence
 
