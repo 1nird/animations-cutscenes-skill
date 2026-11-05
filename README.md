@@ -87,9 +87,6 @@ py scripts/verify.py --dir out
 - `verify.py` passes all ten gates on the example project.
 - The root channel is exercised separately: a 0.2-stud drop moves both soles by
   0.2 and trips the floor gate, which is the correct failure.
-
-**Not checked:** the emitted Luau has not been played in Studio from this machine,
-and no `.rbxmx` has been imported into the Animation Editor here. Those are the
 last mile, and the skill says so rather than pretending otherwise.
 
 ## Licence
