@@ -1,9 +1,5 @@
 # rxz · Roblox Animation + Cutscenes
 
-One Claude Code skill, in one folder. It authors Roblox character animation and
-cutscene camera work **as data**, verifies it with numbers and a contact sheet,
-and plays it in Studio — with no Blender, no rig file, and no asset upload.
-
 ## Install
 
 Copy the `roblox-animation` folder into the folder Claude Code reads:
