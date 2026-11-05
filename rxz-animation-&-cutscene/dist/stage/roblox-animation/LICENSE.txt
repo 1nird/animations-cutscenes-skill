@@ -1,0 +1,14 @@
+rxz Roblox Animation + Cutscenes - free licence
+
+You may use this skill, and anything you make with it, in your own projects,
+including commercial Roblox games. You may change it however you like for your
+own use.
+
+You may not sell it. If you pass it on, keep this file with the copy and say
+where it came from.
+
+The skill teaches timing, posing and camera grammar. It does not license another
+game's animation data, rigs, characters or cutscenes. Reference footage is for
+studying motion; do not ship assets you did not make or license.
+
+Provided as is, with no warranty.

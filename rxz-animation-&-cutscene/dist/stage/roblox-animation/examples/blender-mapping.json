@@ -1,0 +1,25 @@
+{
+  "rig": "r15",
+  "armature": "Armature",
+  "studs_per_unit": 1.0,
+  "priority": "Action",
+  "bones": {
+    "HumanoidRootPart": "HumanoidRootPart",
+    "LowerTorso": "LowerTorso",
+    "UpperTorso": "UpperTorso",
+    "Head": "Head",
+    "LeftUpperArm": "LeftUpperArm",
+    "LeftLowerArm": "LeftLowerArm",
+    "LeftHand": "LeftHand",
+    "RightUpperArm": "RightUpperArm",
+    "RightLowerArm": "RightLowerArm",
+    "RightHand": "RightHand",
+    "LeftUpperLeg": "LeftUpperLeg",
+    "LeftLowerLeg": "LeftLowerLeg",
+    "LeftFoot": "LeftFoot",
+    "RightUpperLeg": "RightUpperLeg",
+    "RightLowerLeg": "RightLowerLeg",
+    "RightFoot": "RightFoot"
+  },
+  "axis": {}
+}

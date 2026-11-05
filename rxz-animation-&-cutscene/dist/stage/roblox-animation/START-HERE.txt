@@ -1,0 +1,31 @@
+rxz · ROBLOX ANIMATION + CUTSCENES
+==================================
+
+One Claude Code skill, in one folder. Free.
+
+1. Copy the whole folder this file is in — roblox-animation — into the folder
+   Claude Code reads:
+     Windows         C:\Users\<you>\.claude\skills
+     macOS / Linux   ~/.claude/skills
+
+   The result must be exactly:
+     .claude\skills\roblox-animation\SKILL.md
+
+2. Restart Claude Code.
+
+3. Ask for a clip or a scene:
+     "make a 0.5s right cross for my R15 fighter, it must beat the walk cycle"
+     "build a five-shot intro: gate, two lines of dialogue, then push in"
+     "this run cycle pops at the loop — fix it"
+
+No installer, no PowerShell, no admin, no key, no account.
+
+You need Python 3.11+ with Pillow (pip install Pillow) for the contact sheet.
+Everything else is stdlib. Roblox Studio is needed for the last mile: playing
+the clip, checking the marker, and publishing the asset.
+
+Blender 3.6+ is optional. Only the IK / custom-rig / mocap path uses it, and
+nothing above stops working without it.
+
+If the rxz Roblox Skills pack is also installed, remove its roblox-animation
+folder first: this skill uses the same name and a different pipeline.

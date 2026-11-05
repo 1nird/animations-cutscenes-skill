@@ -1,0 +1,21 @@
+{
+  "name": "R15 Nominal",
+  "joints": {
+    "HumanoidRootPart": {"parent": null, "offset": [0, 2.20, 0]},
+    "LowerTorso": {"parent": "HumanoidRootPart", "offset": [0, 0.00, 0]},
+    "UpperTorso": {"parent": "LowerTorso", "offset": [0, 0.45, 0]},
+    "Head": {"parent": "UpperTorso", "offset": [0, 0.95, 0]},
+    "LeftUpperArm": {"parent": "UpperTorso", "offset": [0.55, 0.65, 0]},
+    "LeftLowerArm": {"parent": "LeftUpperArm", "offset": [0, -0.70, 0]},
+    "LeftHand": {"parent": "LeftLowerArm", "offset": [0, -0.70, 0]},
+    "RightUpperArm": {"parent": "UpperTorso", "offset": [-0.55, 0.65, 0]},
+    "RightLowerArm": {"parent": "RightUpperArm", "offset": [0, -0.70, 0]},
+    "RightHand": {"parent": "RightLowerArm", "offset": [0, -0.70, 0]},
+    "LeftUpperLeg": {"parent": "LowerTorso", "offset": [0.25, -0.15, 0]},
+    "LeftLowerLeg": {"parent": "LeftUpperLeg", "offset": [0, -0.90, 0]},
+    "LeftFoot": {"parent": "LeftLowerLeg", "offset": [0, -0.90, 0]},
+    "RightUpperLeg": {"parent": "LowerTorso", "offset": [-0.25, -0.15, 0]},
+    "RightLowerLeg": {"parent": "RightUpperLeg", "offset": [0, -0.90, 0]},
+    "RightFoot": {"parent": "RightLowerLeg", "offset": [0, -0.90, 0]}
+  }
+}

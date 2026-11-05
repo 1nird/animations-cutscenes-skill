@@ -1,0 +1,3 @@
+rxz · ROBLOX ANIMATION + CUTSCENES
+==================================
+copy the folder as path > give your ai this prompt: "[path] set the /roblox-animation skill up for me"
