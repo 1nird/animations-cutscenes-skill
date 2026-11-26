@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1
+
+- **Fix:** `fk.py` now writes `grounded` and `locomotion` into `fk.report.json`.
+  `verify.py` read both but never received them, so a run cycle with more than
+  0.25 studs of stride failed the planted-foot gate, and a `grounded: false`
+  clip failed the foot-contact gate.
+
 ## 1.1.0
 
 - **Optional Blender path.** `blender.py` finds Blender 3.6+, probes an armature
