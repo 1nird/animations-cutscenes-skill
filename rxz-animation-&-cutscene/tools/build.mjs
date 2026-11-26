@@ -78,7 +78,7 @@ if (!head.startsWith(`---\nname: ${NAME}\n`)) {
 
 // Zip the stage PARENT so the archive contains exactly one folder.
 const zip = join(root, "dist", `rxz-animation-v${version}.zip`);
-execFileSync("py", [join(root, "tools", "zip.py"), stageRoot, zip], { stdio: "inherit" });
+execFileSync(process.platform === "win32" ? "py" : "python3", [join(root, "tools", "zip.py"), stageRoot, zip], { stdio: "inherit" });
 
 console.log(`  ${NAME} v${version}`);
 console.log(`  ${zip}`);
