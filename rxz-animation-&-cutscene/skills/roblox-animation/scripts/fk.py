@@ -92,6 +92,10 @@ def analyse(spec, rig):
         "rig": spec.get("rig", "R15"),
         "frames": len(frames),
         "fps": spec["fps"],
+        # verify.py gates on these; without them a locomotion clip is judged
+        # as planted and an airborne clip as grounded.
+        "grounded": bool(spec.get("grounded", True)),
+        "locomotion": bool(spec.get("locomotion", False)),
         "lowest_sole": round(lowest[0], 3),
         "lowest_foot": lowest[1],
         "lowest_frame": lowest[2],
